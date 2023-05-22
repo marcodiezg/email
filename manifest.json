@@ -1,0 +1,39 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.plasmo.b89b7dfa.png",
+         "16": "icon16.plasmo.00ac8b83.png",
+         "32": "icon32.plasmo.9ad0c5b6.png",
+         "48": "icon48.plasmo.cae3a6b3.png",
+         "64": "icon64.plasmo.e4b604fc.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "author": "gorvgoyl",
+   "background": {
+      "service_worker": "background.5fadff2f.js"
+   },
+   "content_scripts": [ {
+      "css": [  ],
+      "js": [ "writer.fd84a220.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "Escriba correos electrónicos y mensajes completos usando ChatGPT AI. Funciona en todos los sitios.",
+   "externally_connectable": {
+      "matches": [ "https://*.chatgptwriter.ai/*", "http://localhost:3000/*" ]
+   },
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icon128.plasmo.b89b7dfa.png",
+      "16": "icon16.plasmo.00ac8b83.png",
+      "32": "icon32.plasmo.9ad0c5b6.png",
+      "48": "icon48.plasmo.cae3a6b3.png",
+      "64": "icon64.plasmo.e4b604fc.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAobgdx5WO+Kx6HCeQGuaEiOqtfZLy46Zvb4FE70ijR1+QQ3hdHfkHKZtg9soXiel8FJN2tLJw4CONei+W1c0tzgGZfHf+xzIH7cs1l5ghjkKjQwvREANU/dLuJTQuitMBiXo+ML+x5prFP4XFFSB9CkPSCbVSKuai6ta3FZbVJUp2QRPfda8QzoIYzFeXwsUFCXyePok+4mDhnC89W5HLjc08AKGvZlyo6CxK/wOURPYa2FEDfLTBj5ovgJVyUr/nlmY2eL8yIuD0Cg6fpyxkQzRea+wBpC1XVRY7bVrH1FhIpJqnv36kayFLCJ+IYFCgvYoTuPMJ0wvLZixAxPRPmQIDAQAB",
+   "manifest_version": 3,
+   "name": "Mail & Messages fot ChatGPT AI",
+   "permissions": [ "storage", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.3.0"
+}
